@@ -14,9 +14,8 @@ public class ReceivedMsgActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_received_msg);
         textViewReceivedMsg = findViewById(R.id.textViewReceivedMsg);
-        Intent intent = getIntent(); //получили интент
-        String msg = intent.getStringExtra("msg"); //метод вернет строчку, которую прислал MainActivity, сохранили значение в переменную
+        Intent intent = getIntent();
+        String msg = intent.getStringExtra("msg");
         textViewReceivedMsg.setText(msg);
-
     }
 }
